@@ -20,5 +20,6 @@ int MatrizTridimensional(int a, int b, int c, int mat[a][b][c]){
 }
 
 void main(){
+    int k, m, n;
     
 }
