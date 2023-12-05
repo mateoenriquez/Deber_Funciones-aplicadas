@@ -13,7 +13,7 @@ int SumMatrices(int a, int b, int ma[a][b], int ma2[a][b], int res[a][b]){
         
     }
     
-    return res;
+    return res[a][b];
 }
 
 void main(){
@@ -35,7 +35,42 @@ void main(){
         }
         
     }
-    
-    
 
+        printf("\n\nMatriz 1\n");
+        for (int i = 0; i < n; i++)
+    {
+        printf("\n");
+        for (int j = 0; j < m; j++)
+        {
+            printf("%d ", mat[i][j]);
+
+        }
+        
+    }
+
+        printf("\n\nMatriz 2\n");
+        for (int i = 0; i < n; i++)
+    {
+        printf("\n");
+        for (int j = 0; j < m; j++)
+        {
+            printf("%d ", mat2[i][j]);
+
+        }
+        
+    }
+    
+    resultado[n][m]=SumMatrices(n, m, mat, mat2, resultado);
+
+    printf("\n\nSuma\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("\n");
+        for (int j = 0; j < m; j++)
+        {
+            printf("%d ", resultado[i][j]);
+
+        }
+        
+    }
 }
